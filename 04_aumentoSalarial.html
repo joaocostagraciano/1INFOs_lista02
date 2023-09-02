@@ -6,11 +6,11 @@
     */
 
     //ENTRADA
-
-    
+     let salarioAtual = parseFloat(prompt("Digite o salário atual:"));
+     let porcentagemAumento = parseFloat(prompt("Digite a porcentagem de aumento desejada:"));
     //PROCESSAMENTO
-    
-    
+     let aumento = (salarioAtual * porcentagemAumento) / 100;
+     let salarioFinal = salarioAtual + aumento;
     //SAÍDA
-    
+     document.write("O novo salário após o aumento é: R$" + salarioFinal.toFixed(2));
 </script>

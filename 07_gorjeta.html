@@ -6,11 +6,11 @@
     */
 
     //ENTRADA
-
+     let precoJantar = parseFloat(prompt("Digite o preço do jantar:"));
     
     //PROCESSAMENTO
-
-    
+     let gorjeta = precoJantar * 0.10;
+     let precoTotal = precoJantar + gorjeta;
     //SAÍDA
-
+     document.write("O preço total a ser pago, incluindo a gorjeta de 10%, é: R$" + precoTotal.toFixed(2));
 </script>

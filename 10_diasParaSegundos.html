@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
-    
+     let dias = parseInt(prompt("Digite a quantidade de dias:"));
+     let horas = parseInt(prompt("Digite a quantidade de horas:"));
+     let minutos = parseInt(prompt("Digite a quantidade de minutos:"));
+     let segundos = parseInt(prompt("Digite a quantidade de segundos:"));
+ 
     //PROCESSAMENTO
-
+     let totalSegundos = (dias * 24 * 60 * 60) + (horas * 60 * 60) + (minutos * 60) + segundos;
     
     //SAÍDA
-
+     document.write("A quantidade de tempo informada equivale a " + totalSegundos + " segundos.");
 </script>

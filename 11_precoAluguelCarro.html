@@ -6,11 +6,12 @@
     */
 
     //ENTRADA
-
-    
-    //PROCESSAMENTO
-
-    
+     let diasAlugados = parseInt(prompt("Digite a quantidade de dias que o carro foi alugado:"));
+     let quilometrosRodados = parseFloat(prompt("Digite a quantidade de quilômetros rodados:"));
+   //PROCESSAMENTO
+     let valorDiaria = 60.00;
+     let valorPorQuilometro = 0.15;
+     let valorAluguel = (diasAlugados * valorDiaria) + (quilometrosRodados * valorPorQuilometro);
     //SAÍDA
-
+     document.write("O valor a ser pago pelo aluguel do carro é: R$" + valorAluguel.toFixed(2));
 </script>

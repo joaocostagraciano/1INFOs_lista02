@@ -7,11 +7,14 @@
     // IR: 11 % do salário bruto
 
     //ENTRADA
-
+     let horasTrabalhadas = parseFloat(prompt("Digite a quantidade de horas trabalhadas no mês:"));
+     let valorPorHora = parseFloat(prompt("Digite o valor por hora trabalhada:"));
     
     //PROCESSAMENTO
-
-    
+     let salarioBruto = horasTrabalhadas * valorPorHora;
+     let descontoINSS = 0.08 * salarioBruto;
+     let descontoIR = 0.11 * salarioBruto;
+     let salarioLiquido = salarioBruto - descontoINSS - descontoIR;
     //SAÍDA
-
+     document.write("O salário líquido é: R$" + salarioLiquido.toFixed(2));
 </script>

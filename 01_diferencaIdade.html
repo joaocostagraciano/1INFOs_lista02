@@ -6,11 +6,12 @@
     */
 
     //ENTRADA
+     let anoNascimentoUsuario = parseInt(prompt("Digite o seu ano de nascimento:"));
+     let anoNascimentoIrmao = parseInt(prompt("Digite o ano de nascimento do seu irmão mais velho:"));
 
-    
     //PROCESSAMENTO
-
+     let diferencaIdade = Math.abs(anoNascimentoUsuario - anoNascimentoIrmao);
     
     //SAÍDA
-
+     document.write("A diferença de idade entre você e seu irmão mais velho é de " + diferencaIdade + " anos.");
 </script>
